@@ -1,0 +1,16 @@
+:root {
+  /* Colors */
+  --logo-color: #f0bf5f;
+  --bg-color: #F1F1F1;
+  --light: #fff;
+  --gold: #FFCC66;
+  --dark-gold: #CC9933;
+  --black: #000;
+  --dark: #666;
+  --header: #333;
+  --grey: #999;
+  --grey-bg: #e9e9e9;
+  --grey-border: #CCC;
+  --grey-table: #C4C4C4;
+  --footer: #333;
+}

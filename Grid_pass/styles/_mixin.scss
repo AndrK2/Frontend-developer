@@ -1,0 +1,25 @@
+
+@mixin badge {
+  display: inline-block;
+  padding: 8px 15px 6px 14px;
+  font-family: $fontRobotoReg400, $fontStandart;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $white;
+  background-color: $dark33;
+}
+
+@mixin OrangeBtn {
+  display: inline-block;
+  padding: 15px 22px 15px 22px;
+  font-family: $fontRobotoReg400, $fontStandart;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $white;
+  background-color: $orange30;
+  border: none;
+  cursor: pointer;
+  transition: background-color ease-in-out .3s;
+}

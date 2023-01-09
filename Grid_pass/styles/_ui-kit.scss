@@ -1,0 +1,156 @@
+/* header link social */
+
+.logo:focus {
+  outline: none;
+}
+
+.header-content {
+  &__nav_link:hover {
+    color: $orange30;
+  }
+
+  &__nav_link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: -1;
+    transition: background-color .3s ease-in-out;
+  }
+
+  &__nav_link:focus::before {
+    background-color: $focus2B;
+    outline: none;
+  }
+
+  &__nav_link:active {
+    color: $active07;
+  }
+
+  &__nav_link:active::before {
+    background-color: transparent;
+  }
+
+}
+
+.header-content {
+   &__social_link:hover svg path {
+    fill: $orange30;
+  }
+
+  &__social_link:focus {
+    outline: none;
+  }
+
+  &__social_link:focus svg path {
+    fill: $focus2B;
+  }
+
+  &__social_link:active svg path {
+    fill: $active07;
+  }
+
+  &__search_form-input:hover {
+    border-bottom: 1px solid $orange30;
+  }
+
+  &__search_form-input:focus {
+    background-color: transparent;
+    border-bottom: 1px solid $orange30;
+  }
+
+  &__search_form-input:active {
+    background-color: transparent;
+    border-bottom: 1px solid $active07;
+  }
+
+  &__search_form-input:active::placeholder {
+    color: transparent;
+  }
+}
+
+
+
+/* btn */
+
+.section-photoset__button, .section-about__content, .section-contact__form {
+  &_btn:hover {
+    background-color: $focus2B;
+  }
+
+  &_btn:focus {
+    outline: 3px solid $active07;
+    outline-offset: -3px;
+  }
+
+  &_btn:active::before {
+    border: none;
+  }
+
+  &_btn:hover::before {
+    border: none;
+  }
+
+  &_btn:active {
+    background-color:$active07;
+  }
+}
+
+.section-projects {
+  &__item_btn:hover {
+    background-color: $orange30;
+  }
+
+  &__item_btn:focus {
+    background-color: $focus2B;
+  }
+
+  &__item_btn:active {
+    background-color: $active07;
+    border-color: $active07;
+  }
+}
+
+/* form, input */
+
+.section-about__content {
+  &_input:hover {
+    color: $orange30;
+  }
+
+  &_input:focus {
+    outline: 1px solid $orange30;
+    outline-offset: -1px;
+  }
+
+  &_input:active {
+    color: $white;
+    outline: none;
+  }
+}
+
+.section-contact__form {
+  &_input:hover::placeholder {
+    color: $orange30;
+  }
+
+  &_input:focus {
+    outline: 1px solid $orange30;
+    outline-offset: -1px;
+  }
+
+  &_input:active {
+    outline: none;
+    color: $dark20;
+  }
+}
+
+.js-validate-error-field {
+  border: 1px solid $red30!important;
+}

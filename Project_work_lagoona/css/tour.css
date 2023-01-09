@@ -1,0 +1,23 @@
+.tour {
+  margin-bottom: 70px;
+}
+
+.tour__inner {
+  padding: 40px;
+  min-height: 106px;
+  border-radius: 15px;
+  background-color: var(--grey-bg);
+}
+
+.tour__form {
+  display: flex;
+  align-items: center;
+  padding: 28px;
+  border-radius: 15px;
+  background-color: var(--light);
+}
+
+.tour__list {
+  margin: 0;
+  padding: 0;
+}

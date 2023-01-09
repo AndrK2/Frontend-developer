@@ -1,0 +1,14 @@
+@import '_common.scss';
+
+@import '_grid.scss';
+
+@import '_fonts.scss';
+
+@import '_ui-kit.scss';
+
+@import '_media.scss';
+
+
+[class*="ymaps-layers-pane"] {
+  filter: grayscale(1);
+}

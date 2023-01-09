@@ -1,0 +1,18 @@
+.button {
+  padding: 13px 20px;
+  border: 1px solid var(--dark-gold);
+  font-family: "Muller", sans-serif;
+  font-size: 16px;
+  color: var(--dark-gold);
+  border-radius: 10px;
+  background-color: var(--light);
+  cursor: pointer;
+  transition: border 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover, :focus {
+  border: 1px solid var(--grey);
+  color: var(--grey);
+  transform: scale(1.1);
+  transition: border 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}

@@ -1,0 +1,607 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Представленные художники</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+        }
+
+        [style*="Open Sans"] {
+            font-family: 'Open Sans', arial, sans-serif !important;
+        }
+
+        [style*="Arial"] {
+            font-family: Arial, Geneva, Tahoma, sans-serif !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        .px-40 {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+
+        .py-32 {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        .py-26 {
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
+
+        .py-21 {
+            padding-top: 21px;
+            padding-bottom: 21px;
+        }
+
+        .py-17 {
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+
+        .pb-34 {
+            padding-bottom: 34px;
+        }
+
+        .pb-32 {
+            padding-bottom: 32px;
+        }
+
+        .pb-8 {
+            padding-bottom: 8px;
+        }
+
+        .mb-34 {
+            margin-bottom: 34px;
+        }
+
+        .mb-11 {
+            margin-bottom: 11px;
+        }
+
+        .p-logo {
+            padding-top: 30px;
+            padding-bottom: 28px;
+        }
+
+        .p-social {
+            padding-top: 27.5px;
+            padding-bottom: 10px;
+        }
+
+        .main-title {
+            margin: 0;
+            margin-bottom: 13px;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+            color: #515151;
+        }
+
+        .main-text {
+            margin: 0;
+            margin-bottom: 12px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            color: #515151;
+        }
+
+        .second-title {
+            margin: 0;
+            margin-bottom: 21px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+
+        .second-title_black {
+            margin: 0;
+            margin-bottom: 21px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #515151;
+        }
+
+        .artist-title {
+            margin: 0;
+            margin-bottom: 8px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+
+        .artist-title_black {
+            margin: 0;
+            margin-bottom: 8px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 24px;
+            color: #515151;
+        }
+
+        .artist-descr {
+            margin: 0;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #ffffff;
+        }
+
+        .artist-descr_black {
+            margin: 0;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #515151;
+        }
+
+        .copyright {
+            margin: 0;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: #757575;
+        }
+
+        .unsubscribe-text {
+            margin: 0;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: #757575;
+        }
+
+        .unsubscribe-link {
+            margin: 0;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: #9D5CD0;
+        }
+
+        .mobile {
+            padding-right: 20px;
+            width: 155px;
+        }
+
+        .mobile-bottom {
+            display: initial;
+        }
+
+        @media (max-width: 620px) {
+            .table-600 {
+                width: 280px !important;
+            }
+
+            .table-480 {
+                width: 244px !important;
+            }
+
+            .table-173 {
+                width: 173px !important;
+            }
+
+            .logo-600 {
+                width: 114px !important;
+                height: 25px !important;
+            }
+
+            .p-logo {
+                padding-top: 17px !important;
+                padding-bottom: 17px !important;
+            }
+
+            .px-40 {
+                padding-right: 18px !important;
+                padding-left: 18px !important;
+            }
+
+            .py-21 {
+                padding-top: 10px;
+            }
+
+            .mobile {
+                display: block !important;
+                width: 240px;
+                padding-right: 0;
+            }
+
+            .hero-img {
+                width: 240px !important;
+                height: 135px !important;
+            }
+
+            .artist-img {
+                width: 244px !important;
+                height: 84px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Blanchard
+        художественная галерея</div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+        <tr>
+            <td align="center">
+                <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#000000">
+                    <tr>
+                        <td align="center" class="p-logo">
+                            <img src="img/logo.png" class="logo-600"
+                                alt="Логотип" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <table class="table-600" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="center">
+                            <img src="img/hero-bg.jpg" width="600" height="300"
+                                alt="Изображение запруди" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff">
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="center" class="py-32 px-40">
+                                        <table align="center" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <h1 style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                                        class="main-title">
+                                                        Торжество импрессионизма
+                                                    </h1>
+                                                    <p style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                                        class="main-text">
+                                                        Опыт говорит нам, что семантический разбор внешних
+                                                        противодействий требует анализа новых принципов формирования
+                                                        материально-технической и кадровой базы.
+                                                    </p>
+                                                    <p style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                                        class="main-text">
+                                                        Задача организации, в особенности же внедрение современных
+                                                        методик, в своём классическом представлении, допускает внедрение
+                                                        глубокомысленных рассуждений. Есть над чем задуматься: элементы
+                                                        политического процесса преданы социально-демократической
+                                                        анафеме! Но интерактивные прототипы заблокированы в рамках своих
+                                                        собственных рациональных ограничений. Сторонники тоталитаризма в
+                                                        науке ограничены исключительно образом мышления.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#000000">
+                    <tr>
+                        <td class="py-26 px-40">
+                            <table>
+                                <tr>
+                                    <td align="left">
+                                        <h2 style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                            class="second-title">
+                                            Представленные художники
+                                        </h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <img src="img/1.jpg" class="artist-img"
+                                            alt="Изображение" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="py-21">
+                                        <h3 style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                            class="artist-title">
+                                            Поль Гоген
+                                        </h3>
+                                        <p style="font-family: Arial, Geneva, Tahoma, sans-serif;" class="artist-descr">
+                                            Прежде всего, разбавленное изрядной долей эмпатии, рациональное мышление в
+                                            значительной степени обусловливает важность укрепления моральных ценностей.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <img src="img/2.jpg" class="artist-img"
+                                            alt="Изображение" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="py-21">
+                                        <h3 style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                            class="artist-title">
+                                            Огюст Ренуар
+                                        </h3>
+                                        <p style="font-family: Arial, Geneva, Tahoma, sans-serif;" class="artist-descr">
+                                            А также сделанные на базе интернет-аналитики выводы освещают чрезвычайно
+                                            интересные особенности картины в целом.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <img src="img/3.jpg" class="artist-img"
+                                            alt="Изображение" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="py-21">
+                                        <h3 style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                            class="artist-title">
+                                            Клод Моне
+                                        </h3>
+                                        <p style="font-family: Arial, Geneva, Tahoma, sans-serif;" class="artist-descr">
+                                            Современная методология разработки однозначно фиксирует необходимость
+                                            системы массового участия.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <img src="img/4.jpg" class="artist-img"
+                                            alt="Изображение" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="py-21">
+                                        <h3 style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                            class="artist-title">
+                                            Эдуард Мане
+                                        </h3>
+                                        <p style="font-family: Arial, Geneva, Tahoma, sans-serif;" class="artist-descr">
+                                            Но социально-экономическое развитие является качественно новой ступенью
+                                            вывода текущих активов.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <img src="img/5.jpg" class="artist-img"
+                                            alt="Изображение" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="py-21">
+                                        <h3 style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                            class="artist-title">
+                                            Винсент Ван Гог
+                                        </h3>
+                                        <p style="font-family: Arial, Geneva, Tahoma, sans-serif;" class="artist-descr">
+                                            Повседневная практика показывает, что разбавленное изрядной долей эмпатии,
+                                            рациональное мышление требует анализа поставленных обществом задач.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff">
+                    <tr>
+                        <td align="center" class="py-32 px-40">
+                            <table align="left" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="left">
+                                        <h2 style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                            class="second-title_black">
+                                            И это ещё не всё!
+                                        </h2>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="table-480">
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <table cellpadding="0" cellspacing="0" class="mb-34">
+                                                        <tr>
+                                                            <td align="left" class="mobile mb-11">
+                                                                <img src="img/check-square.jpg"
+                                                                    width="36" height="36" class="mb-11"
+                                                                    alt="Изображение" />
+                                                                <p style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                                                    class="artist-descr_black">
+                                                                    Уникальные подборки работ с авторскими рецензиями
+                                                                </p>
+                                                            </td>
+                                                            <td align="left" class="mobile mb-11">
+                                                                <img src="img/calendar.jpg"
+                                                                    width="36" height="36" class="mb-11"
+                                                                    alt="Изображение" />
+                                                                <p style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                                                    class="artist-descr_black">
+                                                                    Возможность настроить нашу рассылку под свой личный
+                                                                    вкус
+                                                                </p>
+                                                            </td>
+                                                            <td align="left" class="mobile mb-11">
+                                                                <img src="img/arrow-up-circle.jpg"
+                                                                    width="36" height="36" class="mb-11"
+                                                                    alt="Изображение" />
+                                                                <p style="font-family: Arial, Geneva, Tahoma, sans-serif;"
+                                                                    class="artist-descr_black">
+                                                                    У вас есть пожелания и предложения?
+                                                                    Напишите нам в ответ на это письмо!
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <!--[if mso]>
+                                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:45px;v-text-anchor:middle;width:240px;" arcsize="112%" stroke="f" fillcolor="#9D5CD0">
+                                                              <w:anchorlock/>
+                                                              <center>
+                                                            <![endif]-->
+                                                    <a href="http://www.diploma-skillbox.tmweb.ru"
+                                                        style="background-color:#9D5CD0;border-radius:50px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:45px;text-align:center;text-decoration:none;width:240px;-webkit-text-size-adjust:none;">Узнать
+                                                        все подробности</a>
+                                                    <!--[if mso]>
+                                                              </center>
+                                                            </v:roundrect>
+                                                          <![endif]-->
+                                                    <!-- <img src="http://www.ch44819.tmweb.ru/blanchard_email/btn.png"
+                                        width="240" height="45" alt="Кнопка" /> -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#000000">
+                    <tr>
+                        <td class="p-social" align="center">
+                            <table width="250" class="table-250" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="center" style="padding-bottom: 12px;">
+                                        <table width="143" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <a href="#">
+                                                        <img src="img/vk.png"
+                                                            width="35" height="35" alt="Изображение" />
+                                                    </a>
+                                                </td>
+                                                <td align="center">
+                                                    <a href="#">
+                                                        <img src="img/ig.png"
+                                                            width="35" height="35" alt="Изображение" />
+                                                    </a>
+                                                </td>
+                                                <td align="right">
+                                                    <a href="#">
+                                                        <img src="img/fb.png"
+                                                            width="35" height="35" alt="Изобраие" />
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <p class="copyright" style="font-family: Arial, Geneva, Tahoma, sans-serif;">
+                                            Blanchard © 2022 / Все права защищены
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#ebebeb">
+                    <tr>
+                        <td align="center">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p class="unsubscribe-text"
+                                            style="font-family: Arial, Geneva, Tahoma, sans-serif;">
+                                            Вы можете также</p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="unsubscribe-link" style="font-family: Arial, Geneva, Tahoma, sans-serif;">отписаться от рассылки</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
